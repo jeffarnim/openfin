@@ -1,7 +1,7 @@
 ---
 title: "ServiceNow integration" 
 slug: "servicenow-integration"
-category: 6554eef116f8c20073ca9339
+category: 6554e8e7ecc618083df24cd5
 hidden: false
 ---
 ServiceNow is a cloud-based platform that provides various IT service management and business process automation solutions.
