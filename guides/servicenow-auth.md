@@ -3,7 +3,7 @@ title: "Working with ServiceNow authorization"
 slug: "servicenow-auth"
 hidden: false
 category: "6554e8e7ecc618083df24cd5"
-parentDocSlug: "servicenow-integration"
+parentDocSlug: "servicenow-integration-alt"
 ---
 Before your OpenFin app can connect to your ServiceNow instance, it must first get authorization by using the [OAuth authorization code grant flow](https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/security/concept/c_OAuthAuthorizationCodeFlow.html), which implements the [PKCE OAuth 2.0 flow](https://datatracker.ietf.org/doc/html/rfc7636) (Proof Key for Code Exchange, pronounced "pixy").
 This flow provides secure authorization without needing to expose a sensitive client secret to insecure clients.
