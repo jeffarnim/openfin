@@ -1,0 +1,30 @@
+name: Sync content to ReadMe
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+  sync:
+    runs-on: ubuntu-latest
+    needs:
+      - checkout
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+          
+      - name: Sync Guides content
+        uses: readmeio/rdme@v8
+        with:
+          rdme: docs ./guides --version=2.0 --key=${{ secrets.README_API_KEY }}
+          
+      - name: Remove Guides pages that no longer exist in repo
+        uses: readmeio/rdme@v8
+        with:
+          rdme: docs:prune ./guides --version=2.0 --confirm --key=${{ secrets.README_API_KEY }}
