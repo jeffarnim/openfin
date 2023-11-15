@@ -1,8 +1,8 @@
 ---
 title: "ServiceNow integration" 
 slug: "servicenow-integration"
-hidden: false
 category: 6554e8e7ecc618083df24cd4
+hidden: false
 ---
 ServiceNow is a cloud-based platform that provides various IT service management and business process automation solutions.
 By using OpenFin's ServiceNow integration, OpenFin applications can improve their workflow automation efforts.
