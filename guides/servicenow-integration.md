@@ -1,6 +1,6 @@
 ---
 title: "ServiceNow integration" 
-slug: "servicenow-integration"
+slug: "servicenow-integration-alt"
 category: 6554e8e7ecc618083df24cd5
 hidden: false
 ---
