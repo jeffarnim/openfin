@@ -3,7 +3,7 @@ title: "ServiceNow integration"
 slug: "servicenow-openfin"
 hidden: false
 category: "6554e8e7ecc618083df24cd5"
-parentDocSlug: "servicenow-integration-alt"
+parentDocSlug: "servicenow-integration"
 ---
 ## Integrate your OpenFin solution with your data in ServiceNow
 
