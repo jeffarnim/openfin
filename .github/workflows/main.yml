@@ -3,7 +3,7 @@ name: Sync content to ReadMe
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   checkout:
@@ -23,8 +23,3 @@ jobs:
         uses: readmeio/rdme@v8
         with:
           rdme: docs ./guides --version=2.0 --key=${{ secrets.README_API_KEY }}
-          
-      - name: Remove Guides pages that no longer exist in repo
-        uses: readmeio/rdme@v8
-        with:
-          rdme: docs:prune ./guides --version=2.0 --confirm --key=${{ secrets.README_API_KEY }}
